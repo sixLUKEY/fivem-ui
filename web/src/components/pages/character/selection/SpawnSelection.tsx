@@ -1,5 +1,5 @@
-import React from 'react';
+import type React from "react";
 
 export const SpawnSelection: React.FC = () => {
-  return <h1>Spawn selection</h1>;
+	return <h1>Spawn selection</h1>;
 };

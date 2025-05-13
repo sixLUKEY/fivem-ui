@@ -1,0 +1,38 @@
+.nui-button {
+  position: relative;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background: #6bc1ff; // Add background color on hover
+  margin: 40px auto;
+  font-family: Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  border: none; // Removed border
+  cursor: pointer;
+  transition:
+    color 0.3s,
+    background 0.3s;
+
+  // Flexible width and height based on font size
+  width: auto;
+  padding: 1rem; // Padding for flexible size
+  height: auto;
+
+  // Hexagonal shape using clip-path
+  clip-path: polygon(5% 50%, 30% 90%, 70% 90%, 95% 50%, 70% 10%, 30% 10%);
+
+  // Hover effect without border
+  &:hover {
+    background: #6bc1ff; // Add background color on hover
+  }
+}
+
+.nui-button--primary {
+  color: #fff;
+}
+
+.nui-button--secondary {
+  color: #7d7d7d; // Optional secondary color
+}
