@@ -1,38 +1,41 @@
 .nui-button {
-  position: relative;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
-  background: #6bc1ff; // Add background color on hover
-  margin: 40px auto;
-  font-family: Helvetica, Arial, sans-serif;
-  box-sizing: border-box;
-  border: none; // Removed border
-  cursor: pointer;
-  transition:
-    color 0.3s,
-    background 0.3s;
+  border: none;
+  background: none;
+  transition: filter 0.3s ease;
+  --glow-color: transparent;
 
-  // Flexible width and height based on font size
-  width: auto;
-  padding: 1rem; // Padding for flexible size
-  height: auto;
-
-  // Hexagonal shape using clip-path
-  clip-path: polygon(5% 50%, 30% 90%, 70% 90%, 95% 50%, 70% 10%, 30% 10%);
-
-  // Hover effect without border
-  &:hover {
-    background: #6bc1ff; // Add background color on hover
+  svg {
+    transition: filter 0.3s ease;
   }
-}
 
-.nui-button--primary {
-  color: #fff;
-}
+  &:hover {
+    svg {
+      filter: drop-shadow(0 0 1px var(--glow-color))
+        drop-shadow(0 0 4px var(--glow-color));
+    }
+  }
 
-.nui-button--secondary {
-  color: #7d7d7d; // Optional secondary color
+  &--primary {
+    --glow-color: #007bff;
+
+    svg path {
+      fill: #007bff;
+    }
+  }
+
+  &--secondary {
+    --glow-color: #6c757d;
+
+    svg path {
+      fill: #6c757d;
+    }
+  }
+
+  &--success {
+    --glow-color: #28a745;
+
+    svg path {
+      fill: #28a745;
+    }
+  }
 }

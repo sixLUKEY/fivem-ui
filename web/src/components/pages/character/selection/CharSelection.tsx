@@ -1,5 +1,6 @@
 import type React from "react";
+import "./CharSelection.scss";
 
 export const CharacterSelection: React.FC = () => {
-	return <h1>Char selection</h1>;
+  return <div className="character-selection"></div>;
 };
