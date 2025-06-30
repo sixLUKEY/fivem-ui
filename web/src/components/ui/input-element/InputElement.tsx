@@ -1,12 +1,29 @@
+import "./InputElement.scss";
 export type InputProps = {
-  children: React.ReactNode;
+  name: string;
+  label: string;
+  icon?: React.ReactNode;
+  placeholder?: string;
+  children?: React.ReactNode;
 };
-export const NuiInputElement: React.FC<InputProps> = ({ children }) => {
+export const NuiInputElement: React.FC<InputProps> = ({
+  icon,
+  children,
+  label,
+  placeholder,
+  name,
+}) => {
   return (
-    <div>
-      <label htmlFor="field">
-        <input type="text" name="field" />
-      </label>
+    <div className="inputElement">
+      {icon}
+      <div className="inputField">
+        <label htmlFor={name}>{label.toUpperCase()}</label>
+        <input
+          type="text"
+          name={name}
+          {...(placeholder ? { placeholder } : {})}
+        />
+      </div>
       {children}
     </div>
   );

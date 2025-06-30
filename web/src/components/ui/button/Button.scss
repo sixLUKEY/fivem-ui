@@ -16,18 +16,18 @@
   }
 
   &--primary {
-    --glow-color: #007bff;
+    --glow-color: #6bc1ff;
 
     svg path {
-      fill: #007bff;
+      fill: #6bc1ff;
     }
   }
 
   &--secondary {
-    --glow-color: #6c757d;
+    --glow-color: transparent;
 
     svg path {
-      fill: #6c757d;
+      fill: #989898;
     }
   }
 
@@ -37,5 +37,9 @@
     svg path {
       fill: #28a745;
     }
+  }
+
+  .bg_svg {
+    transform: rotate(90deg);
   }
 }

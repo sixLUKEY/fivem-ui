@@ -1,0 +1,40 @@
+.inputElement {
+  font-family: "Onest", sans-serif;
+  border: 1px solid #6d7074;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  gap: 8px;
+  flex: 1;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+svg {
+  margin-block: auto;
+}
+
+label {
+  font-weight: 700;
+  color: #ffff;
+  font-size: 20px;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+}
+
+input::placeholder {
+  color: #b4b5b7;
+  font-size: 18px;
+  font-weight: 600;
+}

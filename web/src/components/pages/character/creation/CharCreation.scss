@@ -1,0 +1,61 @@
+section {
+  width: 100%;
+  height: 100%;
+  // background-image: url("../../../../static/images/image.png");
+  padding: 2rem, 5rem;
+  background: radial-gradient(
+    55.37% 55.37% at 50% 50%,
+    rgba(12, 25, 34, 0) 0%,
+    rgba(80, 87, 101, 0.75) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background: rgba(9, 18, 26, 0.6);
+  }
+
+  h1 {
+    font-size: 40px;
+    color: white;
+    margin: 0;
+  }
+
+  .subtext {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    font-family: "Onest", sans-serif;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .birthday_gender {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+
+    .gender {
+      border: 1px solid #6d7074;
+      border-radius: 8px;
+      padding: 8px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+  }
+}
